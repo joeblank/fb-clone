@@ -28,7 +28,7 @@
     </div>
   </section>
   <section class="right-container">
-    <img class="profile-pic-thumbnail" ng-src='{{getUser}}' alt="" />
+    <img class="profile-pic-thumbnail" ng-src='{{pic.profilePic}}' alt="" />
     <!-- <div class="profile-pic-thumbnail">{{getUser}}</div> -->
     <div class="name"></div>
     <div class="home">Home</div>
@@ -39,16 +39,44 @@
 </nav>
 
 <main class="main-container">
+
   <div class="post-status-container">
     <div class="pic-status-container">
-      <div class="profile-pic"></div>
-      <input class="status" type="text" name="name" placeholder="What's on your mind?">
+      <img class="profile-pic" ng-src='{{pic.profilePic}}' alt='profile picture'/>
+      <input ng-model='newPost' class="status" type="text" name="name" placeholder="What's on your mind?">
     </div>
+    <!-- <div><hr></div> -->
     <div class="photo-vid-container">
-
+      <div class="">Photo/Video</div>
+      <div class="">Photo Album</div>
+      <div class="">...</div>
     </div>
     <div class="post-buttons-container">
-
+      <div ng-click='postPost(newPost)' class="post-button">Post</div>
     </div>
   </div>
+
+  <section class="feed-container" ng-repeat='sample in samplePosts'>
+    <div class="post-container">
+      <div class="upper-post-container">
+        <img class="feed-profile-pic" ng-src='{{sample.profilePic}}' />
+        <div class="post-info">
+          <div class="post-name">{{sample.name}}</div>
+        </div>
+      </div>
+      <div class="post-text-container">
+        <div class="post-text">{{sample.post}}</div>
+        <div class="line">
+          <hr>
+        </div>
+        <div class="bottom-post-container">
+          <div class="like-container">Like</div>
+          <div class="comment-container">Comment</div>
+          <div class="share-container">Share</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
 </main>

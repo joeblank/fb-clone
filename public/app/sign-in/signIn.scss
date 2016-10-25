@@ -1,0 +1,24 @@
+$theme-color: #3B5998;
+$text-color: white;
+
+.sign-in-nav-cont {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: $theme-color;
+  color: $text-color;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .fb-logo {
+    width: 100px;
+  }
+  .sign-up {
+    width: 200px;
+    .sign-up-btn {
+
+    }
+  }
+  .sign-in-container {
+    width: 400px;
+  }
+}

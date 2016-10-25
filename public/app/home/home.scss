@@ -7,6 +7,10 @@ $add-user: '../icons/add-user-to-social-network.png';
 $messages: '../icons/two-rectangular-speech-bubbles.png';
 $text-color: white;
 
+//Feed variables
+$feed-bgc-primary: #FFFFFF;
+$feed-bgc-secondary: #F6F7F9;
+
 
 .nav-container {
   width: 100%;
@@ -96,20 +100,93 @@ $text-color: white;
 .main-container {
   background: $body-bg-color;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   .post-status-container {
+    margin: 10px 0px;
     .pic-status-container {
+      width: 500px;
+      background: $feed-bgc-primary;
+      display: flex;
+      align-items: center;
       .profile-pic {
-
+        width: 50px;
+        height: 50px;
+        margin: 5px 5px;
+        border: solid 1px;
       }
       .status {
-
+        width: 300px;
+        border: none;
+        font-size: 15px;
+      }
+      .status:focus {
+        outline: none;
       }
     }
     .photo-vid-container {
-
+      display: flex;
+      background: $feed-bgc-primary;
+      div {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
     }
     .post-buttons-container {
-
+      background: $feed-bgc-secondary;
+      height: 30px;
+      .post-button {
+        width: 40px;
+        height: 20px;
+        color: $feed-bgc-primary;
+        background: $theme-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+      }
     }
   }
+  .feed-container {
+    width: 500px;
+    .post-container {
+      margin: 10px 0px;
+      .upper-post-container {
+        display: flex;
+        .feed-profile-pic {
+          width: 25px;
+          height: 25px;
+
+        }
+        .post-info {
+          .post-name {
+
+          }
+        }
+      }
+      .post-text-container {
+        .post-text {
+
+        }
+        .line {
+
+        }
+      }
+      .bottom-post-container {
+        display: flex;
+        .like-container {
+          margin-right: 10px;
+        }
+        .comment-container {
+          margin-right: 10px;
+        }
+        .share-container {
+
+        }
+      }
+    }
+  }
+
 }
