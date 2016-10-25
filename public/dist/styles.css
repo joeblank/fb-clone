@@ -1,0 +1,73 @@
+
+.nav-container {
+  width: 100%;
+  height: 40px;
+  background-color: #3B5998;
+  display: flex;
+  justify-content: space-around; }
+  .nav-container .left-container {
+    display: flex;
+    align-items: center; }
+    .nav-container .left-container .fb-icon {
+      width: 25px;
+      height: 25px;
+      background: url("../icons/facebook-logo.png") center no-repeat;
+      background-size: contain;
+      margin-right: 5px; }
+    .nav-container .left-container .search-bar {
+      width: 400px;
+      height: 25px;
+      border-radius: 2px;
+      border: none;
+      font-size: 15px; }
+    .nav-container .left-container .mag-container {
+      background-color: #E9EBEE;
+      width: 25px;
+      height: 25px;
+      border-radius: 2px;
+      border: none;
+      margin-left: -5px; }
+      .nav-container .left-container .mag-container .mag-icon {
+        background: url("../icons/mag-glass.png") no-repeat center;
+        width: 18px;
+        height: 18px;
+        background-size: contain;
+        margin: auto;
+        margin-top: 3px; }
+  .nav-container .right-container {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    .nav-container .right-container .profile-pic-thumbnail {
+      width: 25px;
+      height: 25px;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .nav-container .right-container .home {
+      color: white; }
+    .nav-container .right-container .friend-requests {
+      background: url("../icons/add-user-to-social-network.png") no-repeat center;
+      width: 25px;
+      height: 25px;
+      background-size: contain; }
+    .nav-container .right-container .messages {
+      background: url("../icons/two-rectangular-speech-bubbles.png") no-repeat center;
+      width: 25px;
+      height: 25px;
+      background-size: contain; }
+    .nav-container .right-container .menu {
+      width: 20px;
+      height: 20px;
+      background: #203552;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      -webkit-clip-path: polygon(50% 100%, 0 50%, 100% 50%);
+      clip-path: polygon(50% 100%, 0 50%, 100% 50%); }
+    .nav-container .right-container .menu:hover {
+      background: white; }
+
+.main-container {
+  background: #E9EBEE;
+  width: 100%; }

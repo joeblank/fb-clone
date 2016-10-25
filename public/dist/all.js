@@ -20,8 +20,22 @@ angular.module('fb-clone').controller('mainCtrl', function ($scope) {
 });
 'use strict';
 
-angular.module('fb-clone').service('mainService', function ($http, $q) {});
+angular.module('fb-clone').service('mainService', function ($http, $q) {
+
+  this.users = [{
+    firstName: 'Joe',
+    lastName: 'Blank',
+    profilePic: 'http://uc48.net/europeana/images/fpo_avatar.png',
+    friends: []
+  }];
+});
 'use strict';
 
-angular.module('fb-clone').controller('homeCtrl', function ($scope, mainService) {});
+angular.module('fb-clone').controller('homeCtrl', function ($scope, mainService) {
+
+  $scope.getUser = function () {
+    return mainService.users[0].profilePic;
+  };
+  $scope.getUser();
+});
 //# sourceMappingURL=all.js.map

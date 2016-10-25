@@ -1,0 +1,115 @@
+// Nav variables
+$theme-color: #3B5998;
+$body-bg-color: #E9EBEE;
+$fb-logo: '../icons/facebook-logo.png';
+$mag-glass: '../icons/mag-glass.png';
+$add-user: '../icons/add-user-to-social-network.png';
+$messages: '../icons/two-rectangular-speech-bubbles.png';
+$text-color: white;
+
+
+.nav-container {
+  width: 100%;
+  height: 40px;
+  background-color: $theme-color;
+  display: flex;
+  justify-content: space-around;
+  .left-container {
+    display: flex;
+    align-items: center;
+    .fb-icon {
+      width: 25px;
+      height: 25px;
+      background: url($fb-logo) center no-repeat;
+      background-size: contain;
+      margin-right: 5px;
+    }
+    .search-bar {
+      width: 400px;
+      height: 25px;
+      border-radius: 2px;
+      border: none;
+      font-size: 15px;
+    }
+    .mag-container {
+      background-color: $body-bg-color;
+      width: 25px;
+      height: 25px;
+      border-radius: 2px;
+      border: none;
+      margin-left: -5px;
+      .mag-icon {
+        background: url($mag-glass) no-repeat center;
+        width: 18px;
+        height: 18px;
+        background-size: contain;
+        margin: auto;
+        margin-top: 3px;
+
+      }
+    }
+  }
+  .right-container {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .profile-pic-thumbnail {
+      width: 25px;
+      height: 25px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .name {
+
+    }
+    .home {
+      color: $text-color;
+    }
+    .friend-requests {
+      background: url($add-user) no-repeat center;
+      width: 25px;
+      height: 25px;
+      background-size: contain;
+    }
+    .messages {
+      background: url($messages) no-repeat center;
+      width: 25px;
+      height: 25px;
+      background-size: contain;
+    }
+    .menu {
+      width: 20px;
+      height: 20px;
+      background: #203552;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      -webkit-clip-path: polygon(50% 100%, 0 50%, 100% 50%);
+      clip-path: polygon(50% 100%, 0 50%, 100% 50%);
+    }
+    .menu:hover {
+      background: white;
+    }
+  }
+}
+.main-container {
+  background: $body-bg-color;
+  width: 100%;
+  .post-status-container {
+    .pic-status-container {
+      .profile-pic {
+
+      }
+      .status {
+
+      }
+    }
+    .photo-vid-container {
+
+    }
+    .post-buttons-container {
+
+    }
+  }
+}
